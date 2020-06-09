@@ -168,23 +168,9 @@ const checkCell = (cell, square) => {
         showAround(cell, square)
     } else if (n === 9) {
         // log('open 9')
-        // openAllLei()
         cell.classList.add('red-mine')
         openAllLei()
-        // alert('点到雷了！\n游戏结束 ┭┮﹏┭┮')
-        // let r = confirm("点到雷了┭┮﹏┭┮");
-        // if (r === true) {
-        //     let cells = es('.grid')
-        //     for (let i = 0; i < cells.length; i++) {
-        //         let cell = cells[i]
-        //         cell.remove()
-        //     }
-        //     insertSquare(n, square)
-        // }
-        // else {
-        //     cell.classList.add('red-mine')
-        //     openAllLei()
-        // }
+        alert('点到雷了！\n游戏结束 ┭┮﹏┭┮')
     } else {
         cell.classList.add('opened')
     }
